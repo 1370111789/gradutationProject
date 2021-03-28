@@ -1,0 +1,62 @@
+/* pages/register/register.wxss */
+.wrapper{
+  position:relative;
+  z-index: 90;
+  padding-bottom: 40rpx;
+}
+
+.left-top-sign{
+  font-size: 120rpx;
+  color: #E6E6E6;
+  position:relative;
+  left: -16rpx;
+}
+
+.welcome{
+  position:relative;
+  left: 50rpx;
+  top: -90rpx;
+  font-size: 46rpx;
+  color: #555;
+}
+
+.input-content{
+  padding: 20rpx 60rpx;
+}
+
+.input-item{
+  display:flex;
+  align-items:flex-end;
+  padding: 0 30rpx;
+  background:#f8f6fc;
+  height: 60rpx;
+  margin-bottom: 30rpx;
+}
+
+.input-item .tit{
+  height: 50rpx;
+  line-height: 56rpx;
+  font-size: 30rpx;
+  color: #606266;
+  width: 26%;
+}
+
+.input-item input{
+  height: 50rpx;
+  font-size: 30rpx;
+  color: #606266;
+  width: 74%;
+}
+
+
+.confirm-btn{
+  width: 630rpx!important;
+  height: 76rpx;
+  line-height: 76rpx;
+  border-radius: 50rpx;
+  margin-top: 30rpx;
+  background: #d43c33;
+  color: #fff;
+  font-size: 32rpx;
+  padding: 0;
+}

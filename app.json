@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/register/register"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "信息公开小程序"
+  },
+  "sitemapLocation": "sitemap38.json"
+}

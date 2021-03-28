@@ -1,0 +1,37 @@
+
+<view class="container">
+  <view class="wrapper">
+    <view class="left-top-sign">REGISTER</view>
+    <view class="welcome">
+      欢迎注册
+    </view>
+    <view class="input-content">
+      <view class="input-item">
+        <text class="tit">用户名:</text>
+        <input  type="text" placeholder="请输入用户名" placeholder-style='text-align:right' data-type="username" id="username" bindinput="handleInput"/>
+      </view>
+      <view class="input-item">
+        <text class="tit">真实姓名:</text>
+        <input  type="text" placeholder="请输入真实姓名" placeholder-style='text-align:right'  data-type="name" id="name" bindinput="handleInput"/>
+      </view>
+      <view class="input-item">
+        <text class="tit">身份证号:</text>
+        <input  type="text" placeholder="请输入身份证号" placeholder-style='text-align:right'  data-type="id" id="id" bindinput="handleInput"/>
+      </view>
+      <view class="input-item">
+        <text class="tit">手机号码:</text>
+        <input  type="text" placeholder="请输入手机号码"  placeholder-style='text-align:right'  data-type="phone" id="phone" bindinput="handleInput"/>
+      </view>
+      <view class="input-item">
+        <text class="tit">登录密码:</text>
+        <input type="password"  placeholder="请输入密码"  placeholder-style='text-align:right' data-type="password" id="password" bindinput="handleInput"/>
+      </view>
+      <view class="input-item">
+        <text class="tit">确认密码:</text>
+        <input  type="text" placeholder="请输入确认密码"  placeholder-style='text-align:right'  data-type="confirmpassword" id="confirmpassword" bindinput="handleInput"/>
+      </view>
+    </view>
+    <button class="confirm-btn" bindtap="register">注册</button>
+  </view>
+
+</view>
