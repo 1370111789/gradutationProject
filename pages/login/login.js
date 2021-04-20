@@ -89,6 +89,36 @@ Page({
       success:function(res){
         console.log(res)
         id = res.data.id
+
+        wx.request({
+          url: 'http://localhost:8080/login',
+          data:{
+            username: e.detail.value.username,
+            password: e.detail.value.password
+          },
+          method:'GET',
+          header:{
+            'content-type':'application/json'
+          },
+          success:function(res){
+            console.log(res);
+            console.log(id);
+            if(res.data){
+              wx.redirectTo({
+                url: '../successlogin/successlogin?userId='+id,
+              })
+            }else{
+              wx.showToast({
+                title: '用户名或密码错误',
+                icon: 'none',
+                duration:2000
+              })
+            }
+          },
+          fail:function(res){
+            console.log("--------fail--------");
+          }
+        })
         
       },
       fail:function(res){
@@ -96,35 +126,7 @@ Page({
       }
     })
     
-    wx.request({
-      url: 'http://localhost:8080/login',
-      data:{
-        username: e.detail.value.username,
-        password: e.detail.value.password
-      },
-      method:'GET',
-      header:{
-        'content-type':'application/json'
-      },
-      success:function(res){
-        console.log(res);
-        console.log(id);
-        if(res.data){
-          wx.redirectTo({
-            url: '../successlogin/successlogin?userId='+id,
-          })
-        }else{
-          wx.showToast({
-            title: '用户名或密码错误',
-            icon: 'none',
-            duration:2000
-          })
-        }
-      },
-      fail:function(res){
-        console.log("--------fail--------");
-      }
-    })
+    
   },
 
   onInPutText: function(e){

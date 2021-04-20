@@ -112,6 +112,18 @@ Page({
     wx.navigateTo({
       url: '../relateaj/relateaj?userId='+this.data.userId,
     })
+  },
+
+  godetail:function(e){
+    console.log(e)
+    console.log(e.currentTarget.dataset.index)
+    var curindex = e.currentTarget.dataset.index
+    console.log(this.data.ajlist[0])
+    var curah = this.data.ajlist[curindex].ah
+    console.log(curah)
+    wx.navigateTo({
+      url: '../detailinformation/detailinformation?curah='+curah,
+    })
   }
 
 
