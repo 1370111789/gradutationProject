@@ -1,0 +1,11 @@
+<!--pages/successlogin/successlogin.wxml-->
+<view class="buttonview">
+  <button size="mini" class="button" bindtap="relate">关联案件</button>
+</view>
+<view class="ajlist" wx:for="{{ajlist}}" data-index="{{index}}" bindtap="detail">
+  <view>{{index+1}}、{{item.ah}}</view>
+  <view>{{item.ajmc}}</view>
+  <view>立案日期：{{item.larq}}</view>
+  <view>￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣</view>
+</view>
+  

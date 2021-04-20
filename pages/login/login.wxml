@@ -5,23 +5,25 @@
     <view class="welcome">
       欢迎登录
     </view>
+    <form bindsubmit="dologin">
     <view class="input-content">
       <view class="input-item">
         <text class="tit">用户名</text>
-        <input  type="text" placeholder="请输入用户名" data-test="abc" data-type="username" id="username" bindinput="handleInput"/>
+        <input  name="username" placeholder="请输入用户名"  value="{{inputText}}" bindinput="onInPutText"  />
       </view>
       <view class="input-item">
         <text class="tit">密码</text>
-        <input type="password"  placeholder="请输入密码" data-test="abc" data-type="password" id="password" bindinput="handleInput"/>
+        <input name="password"  placeholder="请输入密码"    password="true" />
       </view>
     </view>
-    <button class="confirm-btn" bindtap="login">登录</button>
+    <button class="confirm-btn" form-type="submit" open-type="getUserInfo">登录</button>
+  </form>
     <view class="forget-section">
-      忘记密码?
+      <text bindtap="gochangepassword">忘记密码?</text>
     </view>
   </view>
   <view class="register-section">
     还没有账号?
-    <text >马上注册</text>
+    <text bindtap="goregister">马上注册</text>
   </view>
 </view>

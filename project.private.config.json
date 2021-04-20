@@ -21,6 +21,30 @@
         {
           "name": "pages/login/login",
           "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/successlogin/successlogin",
+          "pathName": "pages/successlogin/successlogin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/confirm/confirm",
+          "pathName": "pages/confirm/confirm",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/changepassword/changepassword",
+          "pathName": "pages/changepassword/changepassword",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/relateaj/relateaj",
+          "pathName": "pages/relateaj/relateaj",
           "scene": null
         }
       ]

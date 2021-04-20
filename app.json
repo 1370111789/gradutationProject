@@ -1,7 +1,12 @@
 {
   "pages": [
     "pages/login/login",
-    "pages/register/register"
+    "pages/register/register",
+    "pages/confirm/confirm",
+    "pages/successlogin/successlogin",
+    "pages/changepassword/changepassword",
+    "pages/relateaj/relateaj",
+    "pages/detailinformation/detailinformation"
   ],
   "window": {
     "navigationBarBackgroundColor": "#000000",

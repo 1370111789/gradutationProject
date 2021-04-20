@@ -1,0 +1,27 @@
+
+<view class="container">
+  <view class="wrapper">
+    <view class="left-top-sign">RELATE</view>
+    <view class="welcome">
+      关联案件
+    </view>
+    <form bindsubmit="doRelate">
+    <view class="input-content">
+      
+      
+      <view class="input-item">
+        <input  name='ah' placeholder="请输入案号" bindblur="saveah" />
+      </view>
+      <view class="input-item">
+        <input  name='realName' placeholder="请输入真实姓名" bindblur="saverealName" />
+      </view>
+      <view class="input-item">
+        <input  name='idNumber' placeholder="请输入身份证号" bindblur="saveidNumber" />
+      </view>
+     
+
+    </view>
+    <button class="confirm-btn" form-type="submit" open-type="getUserInfo">确认</button>
+  </form>
+   </view>
+</view>

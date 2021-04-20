@@ -1,0 +1,13 @@
+/* pages/successlogin/successlogin.wxss */
+.buttonview{
+  
+  height: 70rpx;
+  width: 750rpx;
+  padding-top: 30rpx;
+}
+
+.button{
+  font-size: 30rpx;
+  margin-left: 550rpx;
+}
+  
