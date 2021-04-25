@@ -1,0 +1,10 @@
+<!--pages/partyinformation/partyinformation.wxml-->
+<view class="detail">
+  <view class="partyinformation">当事人详细信息</view>
+  <view>姓名：{{mc}}</view>
+  <view>当事人身份：{{xh}}</view>
+  <view>当事人类型：{{lx}}</view>
+  <view>{{isxb}}{{xb}}</view>
+  <view>{{iszz}}{{zz}}</view>
+  <view>{{issfzh}}{{sfzh}}</view>
+</view>

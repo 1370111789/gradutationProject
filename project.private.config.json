@@ -45,6 +45,24 @@
         {
           "name": "pages/relateaj/relateaj",
           "pathName": "pages/relateaj/relateaj",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/detailinformation/detailinformation",
+          "pathName": "pages/detailinformation/detailinformation",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/partyinformation/partyinformation",
+          "pathName": "pages/partyinformation/partyinformation",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/scheduleinformation/scheduleinformation",
+          "pathName": "pages/scheduleinformation/scheduleinformation",
           "scene": null
         }
       ]

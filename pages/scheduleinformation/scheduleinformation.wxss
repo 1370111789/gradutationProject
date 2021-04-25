@@ -1,0 +1,4 @@
+/* pages/scheduleinformation/scheduleinformation.wxss */
+.scheduleinformation{
+  font-size: large;
+}

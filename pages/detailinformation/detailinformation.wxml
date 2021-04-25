@@ -1,2 +1,28 @@
 <!--pages/detailinformation/detailinformation.wxml-->
-<text>pages/detailinformation/detailinformation.wxml</text>
+<view class="detail" >
+  <view class="ajdetail">案件基本信息</view>
+  <view>案件名称：{{ajmc}}</view>
+  <view>立案日期：{{larq}}</view>
+  <view>案号：{{ah}}</view>
+  <view>案由名称：{{aymc}}      案件状态：{{ajzt}}</view>
+  <view>{{iszsfg}}{{zsfg}}</view>
+  <view>{{isxgft}}{{xgft}}</view>
+  <view>￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣</view>
+</view>
+
+<view class="party">
+  <view class="partytitle">当事人信息列表</view>
+  <view class="partylist" wx:for="{{partylist}}" data-index="{{index}}" bindtap="partydetail">
+  <view wx:if="{{item.xh==0}}">{{index+1}}、 原告  {{item.mc}}</view>
+  <view wx:if="{{item.xh==1}}">{{index+1}}、 被告  {{item.mc}}</view>
+  </view>
+</view>
+<view>￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣</view>
+
+<view class="schedule">
+  <view class="scheduletitle">排期开庭信息</view>
+  <view class="schedulelist" wx:for="{{schedulelist2}}" data-index="{{index}}" bindtap="scheduledetail">
+  <view wx:if="{{item.sfkt==0}}">{{index+1}}、 {{item.ktsj}}  {{item.fth}}   未开庭</view>
+  <view wx:if="{{item.sfkt==1}}">{{index+1}}、 {{item.ktsj}}  {{item.fth}}   已开庭</view>
+  </view>
+</view>

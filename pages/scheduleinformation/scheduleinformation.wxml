@@ -1,0 +1,9 @@
+<!--pages/scheduleinformation/scheduleinformation.wxml-->
+<view class="detail">
+  <view class="scheduleinformation">排期开庭详细信息</view>
+  <view>排期时间：{{pqsj}}</view>
+  <view>开庭时间：{{ktsj}}</view>
+  <view>法庭号：{{fth}}</view>
+  <view>主审法官：{{zsfg}}</view>
+  <view>是否开庭：{{sfkt}}</view>
+</view>

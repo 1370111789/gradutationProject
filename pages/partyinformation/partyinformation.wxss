@@ -1,0 +1,4 @@
+/* pages/partyinformation/partyinformation.wxss */
+.partyinformation{
+  font-size: large;
+}

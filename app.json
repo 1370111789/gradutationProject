@@ -6,7 +6,9 @@
     "pages/successlogin/successlogin",
     "pages/changepassword/changepassword",
     "pages/relateaj/relateaj",
-    "pages/detailinformation/detailinformation"
+    "pages/detailinformation/detailinformation",
+    "pages/partyinformation/partyinformation",
+    "pages/scheduleinformation/scheduleinformation"
   ],
   "window": {
     "navigationBarBackgroundColor": "#000000",

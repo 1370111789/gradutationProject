@@ -1,1 +1,12 @@
 /* pages/detailinformation/detailinformation.wxss */
+.ajdetail{
+  font-size: large;
+}
+
+.partytitle{
+  font-size: large;
+}
+
+.scheduletitle{
+  font-size: large;
+}
